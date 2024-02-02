@@ -1,18 +1,249 @@
-body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+@media only screen and (min-width: 992px) {
+  body {
+    height: 100vh;
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
 }
+
 .hidden {
   display: none;
 }
-img {
-  position: absolute;
+
+.main {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.world-clock {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 12px;
+  align-items: center;
+  margin: 15px 0px 50px 0px;
+}
+
+.here-clock,
+.ny-clock,
+.here-korea {
+  text-align: center;
+}
+
+.here-clock h3,
+.here-clock h4,
+.ny-clock h3,
+.ny-clock h4,
+.here-korea h3,
+.here-korea h4 {
+  margin: 0;
+}
+.welcome {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.today-quote {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#quote-saying,
+#quote-author {
+  font-size: 10px;
+}
+.planner {
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#todo-form input,
+#weekly-form input {
+  padding: 13px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#todo-form input::placeholder,
+#weekly-form input::placeholder {
+  color: #aaa;
+}
+
+#todo-form input:focus,
+#weekly-form input:focus {
+  padding: 17px;
+  border-radius: 8px;
+  max-width: 400px;
   width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: -1;
-  opacity: 60%;
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+#todo-form input[type="submit"],
+#weekly-form input[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#todo-form input[type="submit"]:hover,
+#weekly-form input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+.deleteButton {
+  color: #fff; /* White text color */
+  padding: 5px 7px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  opacity: 70%;
+  transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+  background-color: #d63a26; /* Darker Tomato color on hover */
+}
+
+.sources {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: space-around;
+}
+.inform {
+  font-size: 20px;
+  padding: 10px 10px 0px 15px;
+}
+
+.inform-des {
+  font-size: 10px;
+  padding-left: 15px;
+}
+.inform-web i {
+  padding-right: 10px;
+}
+a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+a:active {
+  background-color: #b3b3b3;
+}
+#news-container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.article {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.boxone {
+  padding-right: 20px;
+}
+
+.boxtwo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 600px;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  opacity: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container h1 {
+  font-size: 18px;
+}
+
+.container p {
+  font-size: 12px;
+}
+#meditationTimer {
+  font-size: 12px;
+}
+#startMeditationBtn {
+  padding: 7px 14px;
+  font-size: 13px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top: 5px 0px;
+}
+#startMeditationBtn:hover {
+  background-color: #45a049;
+}
+#login-form {
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.what-name {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
 }
