@@ -10,7 +10,7 @@ async function getWeather(city, elementId, iconElementId) {
     const weatherIcon = document.getElementById(iconElementId);
     const img = document.createElement("img");
     img.src = icon;
-    weatherIcon.appendChild = img;
+    weatherIcon.appendChild(img);
     const weatherElement = document.getElementById(elementId);
     weatherElement.textContent = `${data.main.temp}°C, ${data.weather[0].description}`;
   } catch (error) {
